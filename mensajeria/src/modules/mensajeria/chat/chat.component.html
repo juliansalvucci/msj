@@ -1,0 +1,10 @@
+<div class="users-chat">
+    <ul *ngFor="let chat of jsonData | async">
+      <li *ngFor="let sas of chat.data">
+        {{ sas.message.template.name }}
+      </li>
+    </ul>
+  </div>
+  <div class="users-type">
+    
+  </div>

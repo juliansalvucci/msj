@@ -1,0 +1,9 @@
+<div class="users-room">
+  <ul *ngFor="let user of jsonData | async">
+    <li routerLinkActive="active" class="user-item">
+      <div class="user-detail">
+        <div class="user-name">{{ user.display_phone_number.$numberLong }}</div>
+      </div>
+    </li>
+  </ul>
+</div>
